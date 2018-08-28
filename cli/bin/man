@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+// 使用commander
+const program = require('commander')
+const shelljs = require('shelljs')
+const chalk = require('chalk')
+
+program
+.version('v1.0.0')
+.description('谁最帅')
+.option('-p --pig <pig>', 'your name')
+.parse(process.argv)
+
+program
+.command("sync <name>")
+.description("同步下姓名")
+.action((big) => {
+  console.log(chalk.red(big))
+})
+
+console.log(program.pig)
+console.log(chalk.blue(program.args))
+
+
+
+program.parse(process.argv)
