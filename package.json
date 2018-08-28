@@ -3,5 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "lirunkai <lirunkai@vipkid.com.cn>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.17.1",
+    "shelljs": "^0.8.2",
+    "yargs": "^12.0.1"
+  }
 }

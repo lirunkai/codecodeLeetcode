@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "big": "bin/big"
+    "big": "bin/big",
+    "manOO": "bin/man"
   },
   "author": "",
   "license": "ISC"

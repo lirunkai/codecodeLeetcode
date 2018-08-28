@@ -1,3 +1,14 @@
-#! /usr/local/bin/node
+#!/usr/bin/env node
+
+const chalk = require('chalk') // chalk是一个美化console输出的库
 
 console.log('big')
+// 查看process.argv的输出
+console.log('big', process.argv)
+
+// 新建一个进程
+let exec = require('child_process').exec
+let child = exec('ls', (err, stdout, stderr) => {
+  if(err) throw err;
+  console.log(chalk.yellow(stdout))
+})
